@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color-scheme: light;
+}
+
+/* Custom scrollbar for cards & tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f0e6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b7c7b8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #52b788;
+}
+
+/* Smooth transitions */
+* {
+  box-sizing: border-box;
+}
+
+/* Print styles for reports */
+@media print {
+  nav, .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+  .print-page {
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
